@@ -1,0 +1,116 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+    position: fixed;
+}
+
+nav .logo{
+    height: 60px;
+}
+.navbar-nav .nav-link {
+    position: relative;
+}
+
+.navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px; 
+    width: 100%;
+    height: 2px;
+    background-color: transparent; 
+    transition: background-color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link.active::after {
+    color: orange;
+    background-color: #007bff; 
+}
+
+.navbar-expand-md .navbar-nav .nav-link {
+    color: #1F265A;
+    transition: .3s;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 400; 
+    font-size: 1.2rem;
+    font-style: normal;
+}
+.navbar-expand-md .navbar-nav .nav-link:hover{
+    color: orange;
+}
+
+
+.navbar-expand-md
+.navbar-toggler {
+    background-color:rgb(37, 208, 86,.7);
+    transform: scale(.8);
+}
+.navbar-expand-md .navbar-nav .nav-link button{
+    background: transparent;
+    border-radius: 2px;
+    transition: .3s;
+}
+nav #sigin-btn{
+    background-color: transparent;
+    border: 1px solid orange;
+    color: black;
+}
+.navbar-expand-md .navbar-nav .nav-link button:hover{
+    opacity: .5;
+}
+#welcome-text{
+    color: #036e84;
+    font-style: oblique;
+    text-align: right;
+    text-transform: capitalize;
+}
+#welcome-text{
+    color: #036e84;
+    font-style: oblique;
+    text-align: right;
+    text-transform: capitalize;
+}
+
+/* Home section */
+#home{
+    height: 90vh;
+}
+.welcome-text {
+    padding: 20px;
+}
+
+.welcome-text h1 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: #1F265A;
+    margin-top: 100px; /*Remove if you add any more content*/
+
+}
+.welcome-text h1 span{
+    font-size: 2.5rem;
+    background: linear-gradient(to right , #036e84,rgb(37, 208, 86,.8),rgb(37, 208, 86));
+    background-clip: text;
+    color: transparent;
+    text-transform: uppercase;
+}
+.welcome-text a{
+    width: 150px;
+    transition: .5s;
+}
+.welcome-text a:hover{
+    color: #1F265A;
+    background: transparent;
+    border: 1px solid orange;
+}
+.welcome-text p {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 8px;
+}
